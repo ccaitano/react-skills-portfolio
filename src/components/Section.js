@@ -1,6 +1,6 @@
 import React from 'react';
 // Here we import the Section.css file to grant access to some additional classNames
-import '../styles/Section.css';
+// import '../styles/Section.css';
 
 // TODO: Create a styles object called "styles"
 

@@ -1,6 +1,6 @@
 import React from 'react';
 // Here we import the Header.css file to grant access to some additional classNames
-import '../styles/Footer.css';
+// import '../styles/Footer.css';
 
 // TODO: Create a styles object called "styles"
 
