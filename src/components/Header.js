@@ -1,4 +1,7 @@
 import React from 'react';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
 // Here we import the Header.css file to grant access to some additional classNames
 // import '../styles/Header.css';
 // FOG - #EFEFEF
@@ -16,7 +19,12 @@ const styles = {
         padding: '10px'
     },
     name: {
-        color: '#EFEFEF'
+        color: '#90A3A7',
+        fontFamily: 'Georgia',
+        justifyContent: 'left',
+    },
+    navbar: {
+      justifyContent: 'space-evenly',
     }
 }
 function Header() {
@@ -24,7 +32,21 @@ function Header() {
 
   return (
     <header className="header" style={styles.header}>
-      <h1 style={styles.name}>Cheryl Caitano</h1>
+      <Container fluid>
+        <Row>
+          <Col>
+            <h1 style={styles.name}>Cheryl Caitano</h1>
+          </Col>
+          <Col>
+            <nav className="navbar" style={styles.navbar}>
+              <a href="/">About Me</a>
+              <a href="/">Projects</a>
+              <a href="/">Resume</a>
+              <a href="/">Contact</a>
+            </nav>
+          </Col>
+        </Row>
+      </Container>
     </header>
   );
 }
