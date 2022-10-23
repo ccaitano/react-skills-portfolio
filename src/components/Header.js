@@ -39,10 +39,10 @@ function Header() {
           </Col>
           <Col>
             <nav className="navbar" style={styles.navbar}>
-              <a href="/">About Me</a>
+              <a href="#aboutMe">About Me</a>
               <a href="/">Projects</a>
               <a href="/">Resume</a>
-              <a href="/">Contact</a>
+              <a href="#contact">Contact</a>
             </nav>
           </Col>
         </Row>
