@@ -3,6 +3,8 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Card from 'react-bootstrap/Card';
 import Alert from 'react-bootstrap/Alert';
+import EmailIcon from '@material-ui/icons/Email';
+import PhoneIcon from '@material-ui/icons/Phone';
 // Here we import a helper function that will check if the email is valid
 import { validateEmail } from '../utils/helpers';
 
@@ -12,6 +14,11 @@ const styles = {
         height:'100vh',
         backgroundColor: '#F5F0DA'
     },
+    contactForm: {
+        width: '75%',
+        marginLeft: 'auto',
+        marginRight: 'auto'
+    },
     formButton: {
         justifyContent: 'center',
     },
@@ -19,6 +26,13 @@ const styles = {
         fontFamily: 'Pacifico',
         textAlign: 'center',
         padding: '20px'
+    },
+    contactIcons: {
+        marginLeft: 'auto',
+        marginRight: 'auto',
+        width: '30%',
+        padding: '20px',
+        textAlign: 'center'
     }
 }
 
@@ -82,8 +96,6 @@ function Contact() {
 };
 
   return (
-
-
     <div className="contact" id="contact"  style={styles.contact}>
         <h1 style={styles.header}>Contact Me</h1>
         <Card className="contactForm" style={styles.contactForm}>
@@ -119,6 +131,11 @@ function Contact() {
                 )}
             </Card.Body>
         </Card>
+        <div style={styles.contactIcons}>
+            <p style={styles.header}>Reach Me by E-mail or Phone:</p>
+            <p><EmailIcon className="icon">E-mail</EmailIcon>  cheryl.caitano@gmail.com</p>
+            <p><PhoneIcon className="icon">E-mail</PhoneIcon>  808.640.4416</p>
+        </div>
     </div>
   );
 }
