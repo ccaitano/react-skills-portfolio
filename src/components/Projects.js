@@ -19,11 +19,12 @@ const styles = {
         margin: '5px'
     },
     cards: {
-        justifyContent: 'space-evenly'
+        justifyContent: 'space-evenly',
     },
     projects: {
         marginTop: '20px',
-        marginBottom: '100px'
+        marginBottom: '100px',
+        backgroundColor: '#F5F0DA'
     },
     heading: {
         textAlign: 'center',
@@ -37,16 +38,16 @@ function Projects() {
         {/* <h1 style={styles.heading}>Project Portfolio</h1> */}
         <Row xs={1} md={4} className="g-4">
             <Col>
-              <Card style={styles.cards}>
+              <Card border="warning" style={styles.cards}>
                 <Card.Img variant="top" src="assets/password-generator.jpg" style={styles.images}/>
                 <Card.Body>
                   <Card.Title>Password Generator</Card.Title>
                   <Card.Text>
                     <div className="d-grid gap-2">
-                        <Button variant="outline-secondary" href="https://ccaitano.github.io/random-password-generator/" >
+                        <Button variant="outline-primary" href="https://ccaitano.github.io/random-password-generator/" >
                             Deployed Application
                         </Button>
-                        <Button variant="outline-secondary" href="https://github.com/ccaitano/random-password-generator">
+                        <Button variant="outline-success" href="https://github.com/ccaitano/random-password-generator">
                             GitHub Repository
                         </Button>
                     </div>
@@ -55,16 +56,16 @@ function Projects() {
               </Card>
             </Col>
             <Col>
-              <Card style={styles.cards}>
+              <Card border="warning" style={styles.cards}>
                 <Card.Img variant="top" src="assets/js-quiz.jpg" style={styles.images}/>
                 <Card.Body>
                   <Card.Title>JavaScript Quiz Game</Card.Title>
                   <Card.Text>
                     <div className="d-grid gap-2">
-                        <Button variant="outline-secondary" href="https://ccaitano.github.io/js-quiz-game/" >
+                        <Button variant="outline-primary" href="https://ccaitano.github.io/js-quiz-game/" >
                             Deployed Application
                         </Button>
-                        <Button variant="outline-secondary" href="https://github.com/ccaitano/js-quiz-game">
+                        <Button variant="outline-success" href="https://github.com/ccaitano/js-quiz-game">
                             GitHub Repository
                         </Button>
                     </div>
@@ -73,16 +74,16 @@ function Projects() {
               </Card>
             </Col>
             <Col>
-              <Card style={styles.cards}>
+              <Card border="warning" style={styles.cards}>
                 <Card.Img variant="top" src="assets/daily-planner.jpg" style={styles.images}/>
                 <Card.Body>
                   <Card.Title>Work Day Scheduler</Card.Title>
                   <Card.Text>
                     <div className="d-grid gap-2">
-                        <Button variant="outline-secondary" href="https://ccaitano.github.io/daily-planner/" >
+                        <Button variant="outline-primary" href="https://ccaitano.github.io/daily-planner/" >
                             Deployed Application
                         </Button>
-                        <Button variant="outline-secondary" href="https://github.com/ccaitano/daily-planner">
+                        <Button variant="outline-success" href="https://github.com/ccaitano/daily-planner">
                             GitHub Repository
                         </Button>
                     </div>
@@ -91,16 +92,16 @@ function Projects() {
               </Card>
             </Col>
             <Col>
-              <Card style={styles.cards}>
+              <Card border="warning" style={styles.cards}>
                 <Card.Img variant="top" src="assets/aux-nudge.jpg" style={styles.images}/>
                 <Card.Body>
                   <Card.Title>Aux Nudge</Card.Title>
                   <Card.Text>
                     <div className="d-grid gap-2">
-                        <Button variant="outline-secondary" href="https://ccaitano.github.io/aux-nudge/" >
+                        <Button variant="outline-primary" href="https://ccaitano.github.io/aux-nudge/" >
                             Deployed Application
                         </Button>
-                        <Button variant="outline-secondary" href="https://github.com/ccaitano/aux-nudge">
+                        <Button variant="outline-success" href="https://github.com/ccaitano/aux-nudge">
                             GitHub Repository
                         </Button>
                     </div>
@@ -109,16 +110,16 @@ function Projects() {
               </Card>
             </Col>
             <Col>
-              <Card style={styles.cards}>
+              <Card border="warning" style={styles.cards}>
                 <Card.Img variant="top" src="assets/tech-blog.jpg" style={styles.images}/>
                 <Card.Body>
                   <Card.Title>Tech Blog</Card.Title>
                   <Card.Text>
                     <div className="d-grid gap-2">
-                        <Button variant="outline-secondary" href="https://mvc-tech-blog-cc.herokuapp.com/" >
+                        <Button variant="outline-primary" href="https://mvc-tech-blog-cc.herokuapp.com/" >
                             Deployed Application
                         </Button>
-                        <Button variant="outline-secondary" href="https://github.com/ccaitano/mvc-tech-blog-cc">
+                        <Button variant="outline-success" href="https://github.com/ccaitano/mvc-tech-blog-cc">
                             GitHub Repository
                         </Button>
                     </div>
@@ -127,16 +128,16 @@ function Projects() {
               </Card>
             </Col>
             <Col>
-              <Card style={styles.cards}>
+              <Card border="warning" style={styles.cards}>
                 <Card.Img variant="top" src="assets/virtual-notepad.jpg" style={styles.images}/>
                 <Card.Body>
                   <Card.Title>Virtual Notepad</Card.Title>
                   <Card.Text>
                     <div className="d-grid gap-2">
-                        <Button variant="outline-secondary" href="https://virtual-notepad.herokuapp.com/" >
+                        <Button variant="outline-primary" href="https://virtual-notepad.herokuapp.com/" >
                             Deployed Application
                         </Button>
-                        <Button variant="outline-secondary" href="https://github.com/ccaitano/virtual-notepad">
+                        <Button variant="outline-success" href="https://github.com/ccaitano/virtual-notepad">
                             GitHub Repository
                         </Button>
                     </div>
@@ -145,16 +146,16 @@ function Projects() {
               </Card>
             </Col>
             <Col>
-              <Card style={styles.cards}>
+              <Card border="warning" style={styles.cards}>
                 <Card.Img variant="top" src="assets/text-editor.jpg" style={styles.images}/>
                 <Card.Body>
                   <Card.Title>Text Editor</Card.Title>
                   <Card.Text>
                     <div className="d-grid gap-2">
-                        <Button variant="outline-secondary" href="https://pwa-jate-cc.herokuapp.com/" >
+                        <Button variant="outline-primary" href="https://pwa-jate-cc.herokuapp.com/" >
                             Deployed Application
                         </Button>
-                        <Button variant="outline-secondary" href="https://github.com/ccaitano/pwa-text-editor">
+                        <Button variant="outline-success" href="https://github.com/ccaitano/pwa-text-editor">
                             GitHub Repository
                         </Button>
                     </div>
@@ -163,16 +164,16 @@ function Projects() {
               </Card>
             </Col>
             <Col>
-              <Card style={styles.cards}>
+              <Card border="warning" style={styles.cards}>
                 <Card.Img variant="top" src="assets/mood-remedy.jpg" style={styles.images}/>
                 <Card.Body>
                   <Card.Title>Mood Remedy</Card.Title>
                   <Card.Text>
                     <div className="d-grid gap-2">
-                        <Button variant="outline-secondary" href="https://mood-remedy.herokuapp.com/" >
+                        <Button variant="outline-primary" href="https://mood-remedy.herokuapp.com/" >
                             Deployed Application
                         </Button>
-                        <Button variant="outline-secondary" href="https://github.com/ccaitano/mood-remedy">
+                        <Button variant="outline-success" href="https://github.com/ccaitano/mood-remedy">
                             GitHub Repository
                         </Button>
                     </div>
@@ -181,16 +182,16 @@ function Projects() {
               </Card>
             </Col>
             <Col>
-              <Card style={styles.cards}>
+              <Card border="warning" style={styles.cards}>
                 <Card.Img variant="top" src="assets/weather-dashboard.jpg" style={styles.images}/>
                 <Card.Body>
                   <Card.Title>Weather Dashboard</Card.Title>
                   <Card.Text>
                     <div className="d-grid gap-2">
-                        <Button variant="outline-secondary" href="https://ccaitano.github.io/weather-dashboard/" >
+                        <Button variant="outline-primary" href="https://ccaitano.github.io/weather-dashboard/" >
                             Deployed Application
                         </Button>
-                        <Button variant="outline-secondary" href="https://github.com/ccaitano/weather-dashboard">
+                        <Button variant="outline-success" href="https://github.com/ccaitano/weather-dashboard">
                             GitHub Repository
                         </Button>
                     </div>

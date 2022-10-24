@@ -8,8 +8,12 @@ import Col from 'react-bootstrap/Col';
 
 // TODO: Create a styles object called "styles"
 const styles = {
+    aboutMe: {
+        height:'100vh',
+        backgroundColor: '#F5F0DA',
+    },
     bioPhoto: {
-        border: '2px solid',
+        border: '#F1A208 2px solid',
         maxHeight: '350px',
         display: 'block',
         marginLeft: 'auto',
@@ -22,19 +26,22 @@ const styles = {
         alignItems: 'center',
         textAlign: 'justify',
         padding: '30px'
+    },
+    title: {
+        fontFamily: 'Pacifico'
     }
 }
 function AboutMe() {
   // TODO: Add a style attribute to `section`
   return (
-    <Container fluid id="aboutMe">
+    <Container fluid id="aboutMe" style={styles.aboutMe}>
         <Row style={styles.bioInfo}>
             <Col sm={4} className="bioPhoto" style={styles.bioPhotoCol}>
                 <Image src="assets/bio-photo.jpg" alt="C. Caitano" roundedCircle='true' style={styles.bioPhoto}></Image>
             </Col>
             <Col sm={8} className="bioInfo" >
                 <div style={styles.bioInfo}>
-                    <h1>About Me</h1>
+                    <h1 style={styles.title}>About Me</h1>
                     <p>                
                         Born and raised on the Big Island of Hawaii. Graduated from Western Washington University with a B.S. in Mathematics and minors in Physics and Astronomy. Worked at The Boeing Company as an Interiors/Seats Stress Technical Analyst before moving back home to Hawaii. Currently co-owns/operates an automotive repair facility, Horizon Automotive, and a craft cocktail ice company, Big Island Craft Ice.
                     </p>

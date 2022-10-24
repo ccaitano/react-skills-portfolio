@@ -8,10 +8,17 @@ import { validateEmail } from '../utils/helpers';
 
 const styles = {
     contact: {
-        padding: '20px'
+        padding: '20px',
+        height:'100vh',
+        backgroundColor: '#F5F0DA'
     },
     formButton: {
         justifyContent: 'center',
+    },
+    header: {
+        fontFamily: 'Pacifico',
+        textAlign: 'center',
+        padding: '20px'
     }
 }
 
@@ -78,10 +85,11 @@ function Contact() {
 
 
     <div className="contact" id="contact"  style={styles.contact}>
+        <h1 style={styles.header}>Contact Me</h1>
         <Card className="contactForm" style={styles.contactForm}>
-            <Card.Header>
+            {/* <Card.Header>
                 Contact Me
-            </Card.Header>
+            </Card.Header> */}
             <Card.Body>
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">

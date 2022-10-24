@@ -3,6 +3,8 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Nav from 'react-bootstrap/Nav';
+
+
 // Here we import the Header.css file to grant access to some additional classNames
 // import '../styles/Header.css';
 // FOG - #EFEFEF
@@ -15,7 +17,7 @@ import Nav from 'react-bootstrap/Nav';
 // TODO: Create a styles object called "styles"
 const styles = {
     header: {
-        background: '#23303D',
+        background: '#191516',
         textAlign: 'center',
         padding: '10px',
         position: 'sticky',
@@ -25,8 +27,9 @@ const styles = {
         alignItems: 'center'
     },
     name: {
-        color: '#90A3A7',
-        fontFamily: 'Georgia',
+        color: '#06A77D',
+        fontFamily: 'Pacifico',
+        fontSize: '75px',
         textAlign: 'left',
         paddingLeft: '20px'
     },
@@ -39,7 +42,6 @@ const styles = {
     }
 }
 function Header({ currentPage, handlePageChange }) {
-  // TODO: Add a style attribute to header and the h1 element
 
   return (
     <header className="header" style={styles.header}>
