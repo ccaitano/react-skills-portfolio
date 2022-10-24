@@ -27,7 +27,7 @@ const styles = {
       justifyContent: 'space-evenly',
     }
 }
-function Header() {
+function Header({ currentPage, handlePageChange }) {
   // TODO: Add a style attribute to header and the h1 element
 
   return (
@@ -38,11 +38,11 @@ function Header() {
             <h1 style={styles.name}>Cheryl Caitano</h1>
           </Col>
           <Col>
-            <nav className="navbar" style={styles.navbar}>
-              <a href="#aboutMe">About Me</a>
-              <a href="#projects">Projects</a>
-              <a href="#resume">Resume</a>
-              <a href="#contact">Contact</a>
+            <nav className="nav navbar" style={styles.navbar}>
+              <a href="#aboutMe" onClick={()=>handlePageChange('AboutMe')} className={currentPage === 'AboutMe' ? 'nav-link active' : 'nav-link'}>About Me</a>
+              <a href="#projects" onClick={()=>handlePageChange('Projects')} className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}>Projects</a>
+              <a href="#resume" onClick={()=>handlePageChange('Resume')} className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>Resume</a>
+              <a href="#contact" onClick={()=>handlePageChange('Contact')} className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>Contact</a>
             </nav>
           </Col>
         </Row>
