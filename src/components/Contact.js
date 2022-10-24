@@ -66,6 +66,14 @@ function Contact() {
     alert('Message successfully submitted!');
   };
 
+  const handleRequired = (e) => {
+    if (!e.target.value.length) {
+        setErrorMessage(`${e.target.name} is required.`);
+    } else {
+        setErrorMessage('');
+    }
+};
+
   return (
 
 
@@ -78,17 +86,17 @@ function Contact() {
                 <Form>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
                         <Form.Label>Email address</Form.Label>
-                        <Form.Control type="email" value={email} name="email" placeholder="Enter e-mail" onChange={handleInputChange} />
+                        <Form.Control type="email" required value={email} name="email" placeholder="Enter e-mail" onBlur={handleRequired} onChange={handleInputChange} />
                     </Form.Group>
 
                     <Form.Group className="mb-3" controlId="formBasicName">
                         <Form.Label>Name</Form.Label>
-                        <Form.Control type="text" value={name} name="name" placeholder="Enter name" onChange={handleInputChange} />
+                        <Form.Control type="text" value={name} name="name" placeholder="Enter name" onBlur={handleRequired} onChange={handleInputChange} />
                     </Form.Group>
                     
                     <Form.Group className="mb-3" controlId="formBasicMessage">
                         <Form.Label>Message</Form.Label>
-                        <Form.Control type="text" value={message} name="message" placeholder="Enter message..." as="textarea" rows={3} onChange={handleInputChange} />
+                        <Form.Control type="text" value={message} name="message" placeholder="Enter message..." onBlur={handleRequired} as="textarea" rows={3} onChange={handleInputChange} />
                     </Form.Group>
                 
                     <Button variant="primary" type="submit" onClick={handleFormSubmit} style={styles.formButton}>
