@@ -13,7 +13,10 @@ const styles = {
       background: '#23303D',
       color: '#90A3A7',
       textAlign: 'center',
-      padding: '10px'
+      padding: '10px',
+      position: 'fixed',
+      bottom:'0',
+      width: '100%'
   },
   contactIcons: {
       justifyContent: 'space-evenly'
@@ -21,6 +24,10 @@ const styles = {
   copyright: {
     paddingTop: '10px',
     justifyContent: 'center'
+  },
+  contactLink: {
+    justifyContent: 'space-evenly',
+    width: '25%'
   }
 }
 function Footer() {
@@ -30,9 +37,9 @@ function Footer() {
     <footer className="footer" style={styles.footer}>
       <Container fluid>
         <Row className="contactIcons" style={styles.contactIcons}>
-              <a href="https://github.com/ccaitano" target="_blank" rel="noreferrer"><GitHubIcon className="icon">GitHub Profile</GitHubIcon></a>
-              <a href="https://www.linkedin.com/in/cheryl-caitano-0a8a8250/" target="_blank" rel="noreferrer"><LinkedInIcon className="icon">LinkedIn Profile</LinkedInIcon></a>
-              <a href="mailto:cheryl.caitano@gmail.com" target="_blank" rel="noreferrer"><EmailIcon className="icon">E-mail</EmailIcon></a>
+              <a href="https://github.com/ccaitano" target="_blank" rel="noreferrer" style={styles.contactLink}><GitHubIcon className="icon">GitHub Profile</GitHubIcon></a>
+              <a href="https://www.linkedin.com/in/cheryl-caitano-0a8a8250/" target="_blank" rel="noreferrer" style={styles.contactLink}><LinkedInIcon className="icon">LinkedIn Profile</LinkedInIcon></a>
+              <a href="mailto:cheryl.caitano@gmail.com" target="_blank" rel="noreferrer" style={styles.contactLink}><EmailIcon className="icon">E-mail</EmailIcon></a>
         </Row>
         <Row className="copyright" style={styles.copyright}>
           <h6>© 2022</h6>

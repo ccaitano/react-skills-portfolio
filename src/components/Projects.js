@@ -12,24 +12,29 @@ import Button from 'react-bootstrap/Button'
 const styles = {
     images: {
         minHeight: '175px',
-        maxHeight: '175px'
+        maxHeight: '175px',
     },
     button: {
         padding: '10px',
         margin: '5px'
     },
     cards: {
-        justifyContent: 'center'
+        margin: '5px',
+        justifyContent: 'space-evenly'
+    },
+    heading: {
+        textAlign: 'center',
+        padding: '20px'
     }
 }
 function Projects() {
 
   return (
     <Container fluid className="projects" id="projects" style={styles.projects}> 
-        <h1>Projects</h1>
-        <Row xs={1} md={3} className="g-4">
+        <h1 style={styles.heading}>Project Portfolio</h1>
+        <Row xs={1} md={4} className="g-4">
             <Col>
-              <Card>
+              <Card style={styles.cards}>
                 <Card.Img variant="top" src="assets/password-generator.jpg" style={styles.images}/>
                 <Card.Body>
                   <Card.Title>Random Password Generator</Card.Title>
@@ -47,7 +52,7 @@ function Projects() {
               </Card>
             </Col>
             <Col>
-              <Card>
+              <Card style={styles.cards}>
                 <Card.Img variant="top" src="assets/js-quiz.jpg" style={styles.images}/>
                 <Card.Body>
                   <Card.Title>JavaScript Quiz Game</Card.Title>
@@ -65,7 +70,7 @@ function Projects() {
               </Card>
             </Col>
             <Col>
-              <Card>
+              <Card style={styles.cards}>
                 <Card.Img variant="top" src="assets/daily-planner.jpg" style={styles.images}/>
                 <Card.Body>
                   <Card.Title>Work Day Scheduler</Card.Title>
@@ -83,7 +88,7 @@ function Projects() {
               </Card>
             </Col>
             <Col>
-              <Card>
+              <Card style={styles.cards}>
                 <Card.Img variant="top" src="assets/aux-nudge.jpg" style={styles.images}/>
                 <Card.Body>
                   <Card.Title>Aux Nudge</Card.Title>
@@ -101,7 +106,7 @@ function Projects() {
               </Card>
             </Col>
             <Col>
-              <Card>
+              <Card style={styles.cards}>
                 <Card.Img variant="top" src="assets/tech-blog.jpg" style={styles.images}/>
                 <Card.Body>
                   <Card.Title>Tech Blog</Card.Title>
@@ -119,7 +124,7 @@ function Projects() {
               </Card>
             </Col>
             <Col>
-              <Card>
+              <Card style={styles.cards}>
                 <Card.Img variant="top" src="assets/virtual-notepad.jpg" style={styles.images}/>
                 <Card.Body>
                   <Card.Title>Virtual Notepad</Card.Title>
@@ -137,7 +142,7 @@ function Projects() {
               </Card>
             </Col>
             <Col>
-              <Card>
+              <Card style={styles.cards}>
                 <Card.Img variant="top" src="assets/text-editor.jpg" style={styles.images}/>
                 <Card.Body>
                   <Card.Title>Text Editor</Card.Title>
@@ -155,7 +160,7 @@ function Projects() {
               </Card>
             </Col>
             <Col>
-              <Card>
+              <Card style={styles.cards}>
                 <Card.Img variant="top" src="assets/mood-remedy.jpg" style={styles.images}/>
                 <Card.Body>
                   <Card.Title>Mood Remedy</Card.Title>
@@ -173,7 +178,7 @@ function Projects() {
               </Card>
             </Col>
             <Col>
-              <Card>
+              <Card style={styles.cards}>
                 <Card.Img variant="top" src="assets/weather-dashboard.jpg" style={styles.images}/>
                 <Card.Body>
                   <Card.Title>Weather Dashboard</Card.Title>
