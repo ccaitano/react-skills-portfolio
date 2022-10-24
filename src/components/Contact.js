@@ -8,7 +8,7 @@ import { validateEmail } from '../utils/helpers';
 
 const styles = {
     contact: {
-        padding: '30px'
+        padding: '20px'
     },
     formButton: {
         justifyContent: 'center',
@@ -96,7 +96,7 @@ function Contact() {
                     
                     <Form.Group className="mb-3" controlId="formBasicMessage">
                         <Form.Label>Message</Form.Label>
-                        <Form.Control type="text" value={message} name="message" placeholder="Enter message..." onBlur={handleRequired} as="textarea" rows={3} onChange={handleInputChange} />
+                        <Form.Control type="text" value={message} name="message" placeholder="Enter message..." onBlur={handleRequired} as="textarea" rows={2} onChange={handleInputChange} />
                     </Form.Group>
                 
                     <Button variant="primary" type="submit" onClick={handleFormSubmit} style={styles.formButton}>

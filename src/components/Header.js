@@ -21,13 +21,18 @@ const styles = {
         position: 'sticky',
         top: '0',
         width: '100%',
-        zIndex: '999'
+        zIndex: '999',
+        alignItems: 'center'
     },
     name: {
         color: '#90A3A7',
         fontFamily: 'Georgia',
         textAlign: 'left',
         paddingLeft: '20px'
+    },
+    text: {
+      justifyContent: 'space-evenly',
+      alignItems: 'center'
     },
     navbar: {
       justifyContent: 'space-evenly',
@@ -39,31 +44,25 @@ function Header({ currentPage, handlePageChange }) {
   return (
     <header className="header" style={styles.header}>
       <Container fluid>
-        <Row>
+        <Row style={styles.text}>
           <Col>
             <h1 style={styles.name}>Cheryl Caitano</h1>
           </Col>
-          <Col>
-          <Nav variant="pills" defaultActiveKey="/aboutMe" style={styles.navbar}>
-            <Nav.Item>
-              <Nav.Link href="#aboutMe" onClick={()=>handlePageChange('AboutMe')} className={currentPage === 'AboutMe' ? 'nav-link active' : 'nav-link'}>About Me</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="#projects" onClick={()=>handlePageChange('Projects')} className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}>Projects</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="#resume" onClick={()=>handlePageChange('Resume')} className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>Resume</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link href="#contact" onClick={()=>handlePageChange('Contact')} className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>Contact</Nav.Link>
-            </Nav.Item>
-          </Nav>
-            {/* <nav className="nav navbar" style=>
-              <a href="#aboutMe" onClick={()=>handlePageChange('AboutMe')} className={currentPage === 'AboutMe' ? 'nav-link active' : 'nav-link'}>About Me</a>
-              <a href="#projects" onClick={()=>handlePageChange('Projects')} className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}>Projects</a>
-              <a href="#resume" onClick={()=>handlePageChange('Resume')} className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>Resume</a>
-              <a href="#contact" onClick={()=>handlePageChange('Contact')} className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>Contact</a>
-            </nav> */}
+          <Col >
+            <Nav variant="pills" defaultActiveKey="/aboutMe" style={styles.navbar}>
+              <Nav.Item>
+                <Nav.Link href="#aboutMe" onClick={()=>handlePageChange('AboutMe')} className={currentPage === 'AboutMe' ? 'nav-link active' : 'nav-link'}>About Me</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link href="#projects" onClick={()=>handlePageChange('Projects')} className={currentPage === 'Projects' ? 'nav-link active' : 'nav-link'}>Projects</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link href="#resume" onClick={()=>handlePageChange('Resume')} className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}>Resume</Nav.Link>
+              </Nav.Item>
+              <Nav.Item>
+                <Nav.Link href="#contact" onClick={()=>handlePageChange('Contact')} className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}>Contact</Nav.Link>
+              </Nav.Item>
+            </Nav>
           </Col>
         </Row>
       </Container>

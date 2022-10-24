@@ -19,8 +19,11 @@ const styles = {
         margin: '5px'
     },
     cards: {
-        margin: '5px',
         justifyContent: 'space-evenly'
+    },
+    projects: {
+        marginTop: '20px',
+        marginBottom: '100px'
     },
     heading: {
         textAlign: 'center',
@@ -31,13 +34,13 @@ function Projects() {
 
   return (
     <Container fluid className="projects" id="projects" style={styles.projects}> 
-        <h1 style={styles.heading}>Project Portfolio</h1>
+        {/* <h1 style={styles.heading}>Project Portfolio</h1> */}
         <Row xs={1} md={4} className="g-4">
             <Col>
               <Card style={styles.cards}>
                 <Card.Img variant="top" src="assets/password-generator.jpg" style={styles.images}/>
                 <Card.Body>
-                  <Card.Title>Random Password Generator</Card.Title>
+                  <Card.Title>Password Generator</Card.Title>
                   <Card.Text>
                     <div className="d-grid gap-2">
                         <Button variant="outline-secondary" href="https://ccaitano.github.io/random-password-generator/" >
