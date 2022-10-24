@@ -40,8 +40,8 @@ function Header() {
           <Col>
             <nav className="navbar" style={styles.navbar}>
               <a href="#aboutMe">About Me</a>
-              <a href="/">Projects</a>
-              <a href="/">Resume</a>
+              <a href="#projects">Projects</a>
+              <a href="#resume">Resume</a>
               <a href="#contact">Contact</a>
             </nav>
           </Col>
