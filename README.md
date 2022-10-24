@@ -14,7 +14,7 @@ Work portfolio aimed at showcasing skills and projects to potential employers. U
 
 ## **Installation**
 
-1. Go to <a href="https://ccaitano.github.io/skills-portfolio"> Cheryl Caitano's Work Portfolio</a> in your browser
+1. Go to <a href="https://ccaitano.github.io/react-skills-portfolio/"> Cheryl Caitano's Work Portfolio</a> in your browser
 ## **Usage**
 
 #### Screenshots
