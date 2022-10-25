@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-skills-portfolio/static/css/main.c59cc657.css",
+    "main.js": "/react-skills-portfolio/static/js/main.80b7c55c.js",
+    "index.html": "/react-skills-portfolio/index.html",
+    "main.c59cc657.css.map": "/react-skills-portfolio/static/css/main.c59cc657.css.map",
+    "main.80b7c55c.js.map": "/react-skills-portfolio/static/js/main.80b7c55c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c59cc657.css",
+    "static/js/main.80b7c55c.js"
+  ]
+}
