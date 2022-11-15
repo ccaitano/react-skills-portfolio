@@ -199,6 +199,24 @@ function Projects() {
                 </Card.Body>
               </Card>
             </Col>
+            <Col>
+              <Card border="warning" style={styles.cards}>
+                <Card.Img variant="top" src="assets/my-life.jpg" style={styles.images}/>
+                <Card.Body>
+                  <Card.Title>My Life</Card.Title>
+                  <Card.Text>
+                    <div className="d-grid gap-2">
+                        <Button variant="outline-primary" href="https://my-life-premium.herokuapp.com/" >
+                            Deployed Application
+                        </Button>
+                        <Button variant="outline-success" href="https://github.com/ccaitano/my-life">
+                            GitHub Repository
+                        </Button>
+                    </div>
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
         </Row>
     </Container> 
   );
